@@ -3,131 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Balance</title>
-    <center><style></center>
-    
-    body {
+    <title>iJob</title>
+    <style>
+        body {
             font-family: 'Roboto', arial, sans-serif;
                         margin: 0;
             padding: 0;
             background-color: #ffffff;
         }
-
-    
-          
-    .calc-button-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0;
-    }
-    
-    
-    button{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background-color: #fffef8;
-    border: 1px  solid rgba(255, 255, 255, 0);
-    border-radius: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    color: rgb(99, 68, 99);
-    flex-basis: 20%;
-    font-family: inherit;
-    font-size: 40px;
-    height: 90px;
-    }
-
-        .screen {
-         backdrop-filter: blur(5.5px);
-         -webkit-backdrop-filter: blur(5.5px);
-         background-color: #fffef8;
-         border: 1px solid rgb(170, 121, 170);
-         border-radius: 16px;
-         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-         color: rgb(170, 121, 170);
-         font-size: 40px;
-         overflow: auto;
-         padding: 20px;
-         text-align: center;
-         width: 350px;
-}
-
-.button:active{
-    background-color: #ff78ed;
-    color: white;
-}
-
-.button:hover{
-    background-color: #ff78ed73;
-}
-
-.reminder {
-         backdrop-filter: blur(5.5px);
-         -webkit-backdrop-filter: blur(5.5px);
-         background-color: #fffef8;
-         border: 1px solid rgb(170, 121, 170);
-         border-radius: 16px;
-         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-         color: rgb(170, 121, 170);
-         font-size: 40px;
-         overflow: auto;
-         padding: 20px;
-         text-align: center;
-         width: 350px;
-}
-
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background-color: #c9a5da;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 20%;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        h2 {
+            margin-top: 0;
+            color: #c9a5da;
+        }
+        h4 {
+            margin-top: 0;
+            color: #886e94;
+            align-items: center;
+        }
+        
+       
+        
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <section class="screen">
-            Balance<br>
-            $500
-        </section>
-     <section class="calc-button">
-          
-            </div>
-
-        </section>
-
-        <section class="calc-buttons">
-            <div class="calc-button-row">
-                <button class="button">C</button>
-                <button class="button">&larr;</button>
-                <button class="button">&divide;</button>
-            </div>
-
-            <div class="calc-button-row">
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button">&times;</button>
-            </div>
-
-            <div class="calc-button-row">
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button">&minus;</button>
-            </div>
-
-            <div class="calc-button-row">
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button">&plus;</button>
-            </div>
-
-            <div class="calc-button-row">
-                <button class="button">0</button>
-                <button class="button-equal">&equals;</button>
-            </div>
-        </section>
-        <div class="reminder">
-                Reminder<br>
-                Saving $200 for gas!
-            </section>
-    </div>
-    <style>
-
+    <header>
+        <div class="container">
+           <h1>CompanyConncet</h1>
+            <nav>
+                <ul>
+                    <center<li><a href="#">About</a></li</center>
+                        <br>
+                    <center<li><a href="./cardbalance.html">Card Balance</a></li</center>
+                        <br>
+                    <center<li><a href="#">Apply for Card</a></li</center>
+                        <br>
+                    <center<li><a href="#">¿No hablan Ingles? Clic para la traducción a español.</a></li</center>
+        
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <center></center><h2>Submit a Job Application</h2></center>
+        </center><h4>An intiative to provide first time debit card holders an acesible way to manage money </h4</center>
+            <form action="submit_application.php" method="post">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="indentification">Identification (PDF or JPEG):</label>
+                <input type="file" id="indentification" name="Identification" accept=".pdf, jpeg" required><br><br>
+                
+        
+                
+                <button type="submit" style="background-color: #c9a5da; color: rgb(255, 255, 255);">Submit Application</button>
+        </div>
+    </section>
+        <marquee behavior="scroll" direction="left" </marquee>
+        <img src="data:image/png;base64,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"
+       alt="black briefcase"
+     
 </body>
- </html>
+</html>
